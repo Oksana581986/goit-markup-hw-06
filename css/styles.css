@@ -149,8 +149,13 @@ img {
   fill: var(--white-color);
 }
 
-.header-button-icon {
-
+.menu-open-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+  width: 32px;
+  height: 22px;
 }
 
 .mob-menu-icon {
@@ -162,16 +167,15 @@ img {
 fill: var(--white-color);
 }
 
-
 .mob-menu-list {
 flex-direction: column;
 }
 
- .mob-nav-item:not(:last-child) {
+ .mob-menu-item:not(:last-child) {
  margin-bottom: 40px;
  }
 
- .mob-menu-link {
+.mob-menu-link {
 font-size: 36px;
 font-weight: 700;
 line-height: 1.11px;
@@ -186,22 +190,26 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 color: var(--ocean-color);
 }
 
-.mob-address-list {
-  margin-bottom: 48px;
+.mob-menu-address {
+  justify-content: space-between;
+}
+
+.mob-address-list .link{
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.025em;
   color: var(--slate-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms font-size 250ms font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
   flex-direction: column;
   display: flex;
   gap: 40px;
+  margin-bottom: 48px;
 }
 
-.mob-address-list:hover,
-.mob-address-list:focus,
-.mob-address-list:active {
+.mob-address-list .link:hover,
+.mob-address-list .link:focus,
+.mob-address-list .link:active {
   color: var(--ocean-color);
   font-size: 36px;
   font-weight: 700;
@@ -363,11 +371,9 @@ color: var(--ocean-color);
   color: var(--slate-color);
 }
 
-
 .work {
   display: none;
 }
-
 
 /*Team*/
 
@@ -560,6 +566,7 @@ width: calc((100% - 16px) / 2);
   max-width: 268px;
   align-items: center;
   justify-content: center;
+  text-align: left;
 }
 
 .footer-container {
@@ -582,6 +589,8 @@ width: calc((100% - 16px) / 2);
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 72px;
+
 }
 
 .footer-media-text {
@@ -626,7 +635,6 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-subscribe {
-  margin-top: 72px;
   display: flex;
   flex-direction: column;
 }
@@ -672,7 +680,6 @@ max-width: 165px;
 height: 40px;
 padding: 8px 24px;
 justify-content: center;
-align-items: center;
 border-radius: 4px;
 background-color: var(--iris-color);
 color: var(--white-color);
@@ -684,7 +691,7 @@ letter-spacing: 0.04em;
 border: none;
 display: flex;
 cursor: pointer;
-margin-left: 131px;
+margin: 0 auto;
 }
 
 .subscribe-icon {

@@ -198,6 +198,8 @@
       flex-direction: row;
       flex-wrap: wrap;
       align-items: baseline;
+      justify-content: flex-start;
+      padding-left: 108px;
     }
 
     .footer-subscribe {
@@ -707,6 +709,7 @@
       .footer-input::placeholder {
       color: var(--white-color);
       }
+      
       
       .subscribe-input-button {
       min-width: 165px;

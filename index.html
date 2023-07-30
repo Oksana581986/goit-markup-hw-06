@@ -54,67 +54,68 @@
             </li>
           </ul>
         </address> 
-        <button type="button" class="menu-open-btn" data-menu-open>
+
+          <button type="button" class="menu-open-btn" data-menu-open>
           <svg class="header-button-icon" width="32" height="22">
-            <use href="./images/icons.svg#icon-menu-hamburger"></use></svg>
-        </button>
-      </div>
-      <div class="mob-menu is-hidden" data-menu>
-        <div>
-          <button class="menu-close-btn" data-menu-close>
-            <svg class="mob-menu-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use></svg>
+              <use href="./images/icons.svg#icon-menu-hamburger"></use></svg>
           </button>
-          <ul class="mob-menu-list list">
-            <li class="mob-menu-item">
-              <a class="mob-menu-link current link" href="./index.html">Studio</a>
-            </li>
-            <li class="mob-menu-item">
-              <a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="mob-menu-item">
-              <a class="mob-menu-link link" href="">Contacts</a>
+        </div>
+        <div class="mob-menu is-hidden" data-menu>
+          <div>
+            <button class="menu-close-btn" data-menu-close>
+              <svg class="mob-menu-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use></svg>
+            </button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link current link" href="./index.html">Studio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-address">
+            <ul class="mob-address-list list">
+              <li class="mob-address-item">
+                <a class="mob-address-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+              <li class="mob-address-item">
+                <a class="mob-address-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul> 
+          <ul class="mob-icon-list list">
+            <li class="mob-icon-item">
+              <a class="mob-icon-link link" href=""> 
+                <svg class="mob-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-mob"></use></svg>
+              </a>
+              </li> 
+            <li class="mob-icon-item">
+              <a class="mob-icon-link link" href="">
+                <svg class="mob-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-mob"></use></svg>
+              </a>
+             </li>
+            <li class="mob-icon-item">
+              <a class="mob-icon-link link" href="">
+                <svg class="mob-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-mob"></use></svg>
+              </a>
+             </li>
+            <li class="mob-icon-item">
+              <a class="mob-icon-link link" href="">
+                <svg class="mob-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-mob"></use></svg>
+              </a>
             </li>
           </ul>
+          </div>
         </div>
-        <div class="mob-menu-address">
-          <ul class="mob-address-list list">
-            <li>
-              <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-            </li>
-            <li>
-              <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-          </ul> 
-        <ul class="mob-icon-list list">
-          <li class="mob-icon-item">
-            <a class="mob-icon-link link" href=""> 
-              <svg class="mob-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-instagram-mob"></use></svg>
-            </a>
-            </li> 
-          <li class="mob-icon-item">
-            <a class="mob-icon-link link" href="">
-              <svg class="mob-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-twitter-mob"></use></svg>
-            </a>
-           </li>
-          <li class="mob-icon-item">
-            <a class="mob-icon-link link" href="">
-              <svg class="mob-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-facebook-mob"></use></svg>
-            </a>
-           </li>
-          <li class="mob-icon-item">
-            <a class="mob-icon-link link" href="">
-              <svg class="mob-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-linkedin-mob"></use></svg>
-            </a>
-          </li>
-        </ul>
-        </div>
-      </div>
-    </header>
+        </header>
 
     <main>
       <!--Solusions for your business-->
@@ -188,6 +189,8 @@
             <li class="work-item">
               <img
                 class="work-list-item-img"
+                srcset="./images/img-1.jpg 1x,
+                ./images/img-12x.jpg 2x"
                 src="./images/img-1.jpg"
                 alt="computer screen"
                 width="360"
@@ -197,6 +200,8 @@
             <li class="work-item">
               <img
                 class="work-list-item-img"
+                srcset="./images/img-2.jpg 1x,
+                ./images/img-22x.jpg 2x"
                 src="./images/img-2.jpg"
                 alt="phone screen"
                 width="360"
@@ -206,6 +211,9 @@
             <li class="work-item">
               <img
                 class="work-list-item-img"
+                srcset="./images/img-3.jpg 1x,
+                ./images/img-3.jpg 1x,
+                ./images/img-32x.jpg 2x"
                 src="./images/img-3.jpg"
                 alt="phone"
                 width="360"

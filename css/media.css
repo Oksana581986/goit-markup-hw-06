@@ -11,6 +11,17 @@
     }
     }
   
+    @media screen and (max-width: 410px) {
+      .mob-icon-list {
+        gap: 36px;  
+      }
+
+      .mob-address-tel {
+        font-size: 24px;
+      }
+    }
+
+
     @media screen and (min-width: 768px) {
     .container {
       max-width: 768px;
@@ -164,6 +175,10 @@
     .work {
     display: none;
     }
+
+    .team-card-container {
+      max-width: 584px;
+    }
   
     .team-list {
     flex-direction: row;
@@ -174,11 +189,10 @@
      width: calc((100% - 24px)/2);
     }
 
-    .customers {
-     padding-right: 93px;
-     padding-left: 93px;
+    .customers-container {
+      max-width: 584px;
     }
-
+    
     .customers-list {
     gap: 72px 24px;
     }
@@ -194,12 +208,12 @@
 }
 
   .footer-container {
+      max-width: 584px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       align-items: baseline;
       justify-content: flex-start;
-      padding-left: 108px;
     }
 
     .footer-subscribe {
@@ -247,8 +261,19 @@
       justify-content: space-between;
       gap: 24px;
     }
+
+    .modal {
+     width: 408px;
+    }
+    }
+
+    @media  screen and (max-width: 767px) {
+      .modal {
+        max-width: 408px;
+      }
     }
   
+
      @media screen and (min-width: 1158px) {
      .container {
      max-width: 1158px;
@@ -311,6 +336,7 @@
     .address { 
       font-style: normal;
       margin-left: auto;
+      padding: 0;
      }
     
     .address-list .link {
@@ -371,7 +397,7 @@
    width: 1128px;
 }
 
-    .page-title {
+  .page-title {
    font-size: 56px;
    line-height: 1.07;
    letter-spacing: 0.02em;
@@ -618,12 +644,14 @@
       
       .footer-logomedia {
        margin-right: 120px;
+       margin-bottom: 0;
       }
       
       .footer-socialmedia {
         width: 208px;
         height: 80px;
         margin-right: 80px;
+        margin-bottom: 0;
       }
       
       .footer-media-text {
@@ -669,7 +697,7 @@
       }
       
       .footer-subscribe {
-        margin-top: 72px;
+        margin-top: 0;
         display: flex;
         flex-direction: column;
         }
@@ -678,6 +706,7 @@
         display: flex;
         justify-content: space-between;
         gap: 24px;
+        margin-bottom: 0;
       }
       
       .subscribe-text {
@@ -704,6 +733,7 @@
       letter-spacing: 0.04em;
       padding-left: 16px;
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      margin-bottom: 0;
       }
       
       .footer-input::placeholder {
@@ -734,8 +764,11 @@
       fill: var(--white-color);
       margin-left: 16px;
       }
-    }
 
+      .modal {
+      width: 408px;
+      }
+    }
  
    
 

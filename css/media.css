@@ -265,6 +265,31 @@
     .modal {
      width: 408px;
     }
+
+    .projects {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+
+    .card-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 24px;
+      row-gap: 72px;
+    }
+
+    .card-item {
+      width: calc((100% - 24px) / 2);
+    }
+
+       .button-list {
+      background-color: var(--white-color);
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 64px;
+    }
     }
 
     @media  screen and (max-width: 767px) {
@@ -768,7 +793,32 @@
       .modal {
       width: 408px;
       }
-    }
+
+      .button-list {
+        background-color: var(--white-color);
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 72px;
+      }
+
+      .projects {
+        padding-top: 96px;
+        padding-bottom: 120px;
+      }
+
+      .card-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
+      }
+
+      .card-item {
+        width: calc((100% - 48px) / 3);
+      }
+        }
  
    
 
